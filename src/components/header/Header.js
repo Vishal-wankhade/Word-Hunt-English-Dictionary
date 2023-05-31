@@ -43,7 +43,7 @@ const Header = ({setCategory, category , word , setWord}) => {
                onChange={(e) => setWord (e.target.value)}
                
                />
-            {/* <TextField
+            {<TextField
             className="select"
             select label="language"
             variant="standard" 
@@ -61,7 +61,7 @@ const Header = ({setCategory, category , word , setWord}) => {
           
             
         
-        </TextField> */}
+        </TextField>}
          </ThemeProvider>
          </div>
     </div>
