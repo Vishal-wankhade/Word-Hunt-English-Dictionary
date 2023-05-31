@@ -5,7 +5,7 @@ import './App.css';
 import   { Container }  from "@mui/material";
 import Header from "./components/header/Header"
 import Definations from "./components/Definations/Definations";
-import Switch from '@mui/material/Switch';
+
 
 function App() {
     
@@ -31,12 +31,12 @@ function App() {
       }
     }
 
-    
+   
+      useEffect(() => {
+    dictionaryApi();
+    // eslint-disable-next-line
+  }, [word, category]);
 
-    useEffect(() => {
-      dictionaryApi();
-    
-    }, [word,category]);
     
     return <div className="App" style={{height:"100vh", backgroundColor:"purple", color:"white"}}>
 
